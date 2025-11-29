@@ -19,36 +19,36 @@
             <img src="/CloneSite/assets/logo.svg" class="logo" alt="logo">
             <i class="fa-solid fa-bars bar-icon"></i> 
             <div class="nav-filter">
-                <select name="" class="no-boarder categories">
+                <select name="" class="no-border categories">
                     <option value="All Categories">All Categories</option>
                     <option value="">Groceries</option>
                     <option value="">Drinks</option>
                     <option value="">Choclates</option>
                 </select>
     
-                <input type="text" name="" id="" class="nav-search-bar no-boarder" placeholder="Search for more than 20,000">
+                <input type="text" name="" id="" class="nav-search-bar no-border" placeholder="Search for more than 20,000">
     
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
         </div>
 
         <ul class="nav-menu-container">
-            <li><a href="#">HOME</a></li>
+            <li class="bold"><a href="#">HOME</a></li>
             <li class="pages-drop-down">
-                <label for="" >PAGES</label >
+                <label for="" class="bold">PAGES</label >
                 <select name="" id="" class="drop-down-menu">
-                    <option value="">ABOUT US</option>
-                    <option value="">SHOPE</option>
-                    <option value="">SINGLE PRODUCT</option>
-                    <option value="">CART</option>
-                    <option value="">CHECKOUT</option>
-                    <option value="">BLOG</option>
-                    <option value="">SINGLE POST</option>
-                    <option value="">STYLE</option>
-                    <option value="">CONTACT</option>
-                    <option value="">THANK YOU</option>
-                    <option value="">MY ACCOUNT</option>
-                    <option value="">404 ERROR</option>
+                    <option value="about-us">ABOUT US</option>
+                    <option value="shpe">SHOPE</option>
+                    <option value="single-product">SINGLE PRODUCT</option>
+                    <option value="cart">CART</option>
+                    <option value="checkout">CHECKOUT</option>
+                    <option value="blog">BLOG</option>
+                    <option value="single-post">SINGLE POST</option>
+                    <option value="style">STYLE</option>
+                    <option value="contact">CONTACT</option>
+                    <option value="thank-you">THANK YOU</option>
+                    <option value="my-account">MY ACCOUNT</option>
+                    <option value="404-error">404 ERROR</option>
                 </select>
             </li>
         </ul>
@@ -64,7 +64,11 @@
     <div class="hero-container">
         <div class="hero-first-div">
             <div class="hero-header">
-                <h1> <span class="organic-word"> Organic </span> Foods at your <span class="doorsteps-word"> Doorsteps</span></h1>
+                <h1>
+                    <span class="organic-word"> Organic </span> 
+                    Foods at <br> <span class="break"> your
+                    <span class="doorsteps-word"> Doorsteps</span></span>
+                </h1>
             </div>
             <div class="hero-paragraph">
                 <p>Dignissim massa diam elementum.</p>
@@ -75,38 +79,56 @@
                 <button class="btn-join">JOIN NOW</button>
             </div>
     
-            <div>
-                <div> <p>14k+</p> </div>
-                <div> <p>Product Varieties</p> </div>
-            </div>
-            <div>
-                <div> <p>50k+</p> </div>
-                <div> <p>Happy Customers</p> </div>
-            </div>
-            <div>
-                <div> <p>10k+</p> </div>
-                <div> <p>STORE LOCATIONS</p> </div>
+            <div class="hero-reviews">
+                <div class="review-row"> 
+                    <p class="review-counts">14k+</p>
+                    <p class="review-des">PRODUCT <br> VARIETIES</p> 
+                </div>
+
+                <div class="review-row"> 
+                    <p class="review-counts">50k+</p> 
+                    <p class="review-des">HAPPY <br> CUSTOMERS</p> 
+                </div>
+
+                <div class="review-row"> 
+                    <p class="review-counts">10k+</p> 
+                    <p class="review-des">STORE <br> LOCATIONS</p> 
+                </div>
             </div>
         </div>
 
         <div class="hero-card-container">
-            <div class="hero-card">
-                <i class="fa-solid fa-rotate-right"></i>
-                <h5>Fresh from farm</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+            <div class="hero-card light-green-bg">
+                <div class="hero-card-icon">
+                    <i class="fa-solid fa-rotate-right card-icon"></i>
+                </div>
+                <div class="head-para">
+                    <h5 class="card-head">Fresh from farm</h5>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+                </div>
             </div>
-            <div class="hero-card">
-                <i class="fa-solid fa-leaf"></i>
-                <h5>100% Organic</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+            <div class="hero-card green-bg">
+                <div class="hero-card-icon">
+                    <i class="fa-solid fa-leaf card-icon"></i>
+                </div>
+                <div class="head-para">
+                    <h5 class="card-head">100% Organic</h5>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+                </div>
             </div>
-            <div class="hero-card">
-                <i class="fa-regular fa-truck"></i>
-                <h5>Free delivery</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+            <div class="hero-card orang-bg">
+                <div class="hero-card-icon">
+                    <i class="fa-regular fa-truck card-icon"></i>
+                </div>
+                <div class="head-para">
+                    <h5 class="card-head">Free delivery</h5>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus autem vel veniam, doloribus corrupti facilis fugiat, obcaecati quis numquam, dolore nemo.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    
     
 </body>
 </html>

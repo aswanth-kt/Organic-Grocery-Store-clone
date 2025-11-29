@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-    overflow: hidden;
+    box-shadow: none;
+    overflow-x: hidden;
 }
 
 .nav-container{
@@ -38,7 +39,7 @@
     padding: 5px 20px;
 }
 
-.no-boarder {
+.no-border {
     border: none;
 }
 
@@ -65,15 +66,15 @@
     outline: none;
 }
 
-/* .search-icon {
-    width: px;
-} */
-
 .nav-menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .nav-menu-container li {
@@ -114,18 +115,12 @@
 /* Hero Section */
 .hero-container {
     background-image: url("/CloneSite/assets/BG.png");
-    height: 100%;
-    width: 100%;
     background-size: cover;
-    padding: 50px 40px 0px 40px;
+    padding: 75px 30px 0px 30px;
 }
 
 .hero-first-div {
     display: block;
-}
-
-.hero-card-container {
-    /* display: flex; */
 }
 
 .hero-header {
@@ -137,17 +132,15 @@
 
 .hero-header h1 {
     font-weight: 450;
-    font-size: 55px;
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    gap: 10px;
-    padding: 15px;
+    font-size: 75px;
+    text-align: left;
+    /* margin: 15px; */
 }
 
 .hero-header h1 .organic-word {
     font-weight: 700;
     color: rgb(105 176 80);
+    display: inline;
 }
 
 .hero-header h1 .doorsteps-word {
@@ -186,4 +179,78 @@
 
 .btn-join:hover {
     background-color: rgb(33, 37, 41, 0.7);
+}
+
+.hero-reviews {
+    display: flex;
+    
+}
+
+.review-row {
+    display: flex;
+    margin: 35px 20px 15px 0;
+    align-items: center;
+}
+
+.review-counts {
+    margin-right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.review-des {
+    font-size: 17px;
+    margin-right: 25px;
+}
+
+.hero-card-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero-card  {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+.hero-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.card-icon {
+    font-size: 30px;
+}
+
+.head-para {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-head {
+    font-size: larger;
+}
+
+.card-description {
+    font-size: small;
+}
+
+.light-green-bg {
+    background-color: rgb(105 176 80);
+}
+
+.green-bg {
+    background-color: rgb(54 65 39);
+}
+.orang-bg {
+    background-color: rgb(249 95 9);
 }
