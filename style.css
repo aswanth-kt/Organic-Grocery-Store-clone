@@ -700,3 +700,129 @@
 .item:hover {
     background-color: #FFECBE;
 }
+
+/* Features */
+.feature-container {
+    display: flex;
+    gap: 20px;
+    margin: 0 30px 50px 30px;
+}
+
+.feature-box {
+    border: 1px solid #747474;
+    border-radius: 5px;
+    padding: 30px 20px;
+    line-height: 30px;
+}
+
+.feature-icon {
+    font-size: 30px;
+    color: #747474;
+}
+
+.feature-head {
+    font-size: 20px;
+}
+
+.feature-para {
+    color: #747474;
+}
+
+/* Footer */
+.footer-container {
+    margin: 100px 30px 35px 30px;
+}
+
+.footer-contents {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr) 1.5fr;
+    justify-content: space-between;
+    column-gap: 70px;
+}
+
+.logo-media {
+    align-items: center;
+    text-align: center;
+}
+
+.logo-media img {
+    height: 75px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    color: #747474;
+}
+
+.social-media .m-icon {
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    padding: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.m-icon:hover {
+    background-color: #EFEFEF;
+}
+
+.bold-list {
+    font-weight: 700;
+    color: #000 !important;
+}
+
+
+.footer-li li {
+    margin-bottom: 13px;
+    color: #747474;
+    cursor: pointer;
+}
+
+.subscribe-area {
+    display: flex;
+    margin: 10px;
+}
+
+.subscribe-area input {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    padding: 5px;
+    
+}
+
+.subscribe-area input::placeholder {
+    padding-left: 5px;
+}
+
+.subscribe-area input:focus {
+    border: 2px solid #007aff;
+    box-shadow: 2px 2px 22px #2389f6;
+    outline: none;
+}
+
+.subscribe-area button {
+    padding: 5px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+
+.subscribe-area button:hover {
+    background-color: #393737;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+    color: #747474;
+}
+
+.footer-bottom a{
+    color: rgb(40 40 40);
+}
