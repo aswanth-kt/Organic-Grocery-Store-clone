@@ -462,7 +462,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    color: white;
+    color: white; 
     margin: 41px;
 }
 
@@ -493,10 +493,27 @@
     left: -100%;
     transition: right 0.5s ease-out; 
 }
+
 .banner-shop-now:hover + .banner-shop-now-underline {
     position: relative;
     width: 100%;
     background-color: white;
     transition: left 0.5s ease-in-out; 
     left: 0%;
+}
+
+
+/* Featured products */
+.featured-product-card-container {
+    display: flex;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.featured-product-card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 35vh;
 }
