@@ -1,28 +1,18 @@
-const leftBtn = document.getElementById("left-btn");
-const rightBtn = document.getElementById("right-btn");
-const scrollCate = document.getElementById("scroll-cate");
 
-let scrollAmount = 180;
-leftBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollCate.scrollLeft -= scrollAmount
-})
-rightBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollCate.scrollLeft += scrollAmount;
-});
+const scrollBtn = (leftId, rightId, containerId, scrollAmount) => {
+    const leftBtn = document.getElementById(leftId);
+    const rightBtn = document.getElementById(rightId);
+    const scrollContainer = document.getElementById(containerId);
 
-// Product-card-scrolling
-const productLeftBtn = document.getElementById("product-left-btn");
-const productRightBtn = document.getElementById("product-right-btn");
-const scrollProduct = document.getElementById("scroll-product");
-
-let productScrollAmount = 280;
-productLeftBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollProduct.scrollLeft -= productScrollAmount
-})
-productRightBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollProduct.scrollLeft += productScrollAmount;
-})
+    if (leftBtn) {
+        leftBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            scrollContainer.scrollLeft -= scrollAmount;
+        })
+    } else {
+        rightBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            scrollContainer.scrollLeft += scrollAmount;
+        })
+    }
+};

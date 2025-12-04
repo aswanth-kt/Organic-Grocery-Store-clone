@@ -147,8 +147,12 @@
             </div>
             <div class="cate-head-right">
                 <button class="btn-view-all">View All</button>
-                <button id="left-btn" class="btn-arrow"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="right-btn" class="btn-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                <button id="left-btn" class="btn-arrow" onclick="scrollBtn('left-btn',null, 'scroll-cate', 180)">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button id="right-btn" class="btn-arrow" onclick="scrollBtn(null, 'right-btn', 'scroll-cate', 180)">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
             </div>
         </div>
 
@@ -612,8 +616,12 @@
             </div>
             <div class="cate-head-right">
                 <button class="btn-view-all">View All</button>
-                <button id="product-left-btn" class="btn-arrow"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="product-right-btn" class="btn-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                <button id="product-left-btn" class="btn-arrow" onclick="scrollBtn('product-left-btn',null, 'scroll-product', 280)">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button id="product-right-btn" class="btn-arrow" onclick="scrollBtn(null, 'product-right-btn', 'scroll-product', 280)">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
             </div>
         </div>
 
@@ -906,12 +914,16 @@
             </div>
             <div class="cate-head-right">
                 <button class="btn-view-all">View All</button>
-                <button id="product-left-btn" class="btn-arrow"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="product-right-btn" class="btn-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                <button id="popular-left-btn" class="btn-arrow" onclick="scrollBtn('popular-left-btn',null, 'scroll-popular-product', 280)">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button id="popular-right-btn" class="btn-arrow" onclick="scrollBtn(null, 'popular-right-btn', 'scroll-popular-product', 280)">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
             </div>
         </div>
 
-        <div class="featured-product-card-container" id="scroll-product">
+        <div class="featured-product-card-container" id="scroll-popular-product">
             <div class="product-card featured-product-card">
                 <div>
                     <img src="./assets/product-thumb-3.png" alt="product-1">
@@ -1183,12 +1195,16 @@
             </div>
             <div class="cate-head-right">
                 <button class="btn-view-all">View All</button>
-                <button id="product-left-btn" class="btn-arrow"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="product-right-btn" class="btn-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                <button id="arrived-left-btn" class="btn-arrow" onclick="scrollBtn('arrived-left-btn', null, 'scroll-arrived', 280)">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button id="arrived-right-btn" class="btn-arrow" onclick="scrollBtn(null, 'arrived-right-btn', 'scroll-arrived', 280)">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
             </div>
         </div>
 
-        <div class="featured-product-card-container" id="scroll-product">
+        <div class="featured-product-card-container" id="scroll-arrived">
             <div class="product-card featured-product-card">
                 <div>
                     <img src="./assets/product-thumb-10.png" alt="product-1">
